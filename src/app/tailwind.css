@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-wrapper-p-sm {
+    @apply p-[18px] sm:p-[19px] md:p-[22px];
+  }
+  .btn-secondary {
+    @apply px-[16px] py-[12px] text-off-white  text-lg border-[1px] border-border-secondary rounded-lg;
+  }
+  .btn-primary {
+    @apply px-[16px] py-[12px] text-green  bg-primary font-semibold    text-lg border-[1px] border-transparent rounded-lg;
+  }
+  .circle {
+    @apply h-[26px] w-[26px] rounded-full before:content-['']    before:text-xl before:w-full before:h-full  before:bg-red-700  bg-off-white  absolute top-0 left-0;
+  }
+  .solar {
+    @apply rounded-full    absolute top-0 left-0;
+  }
+}
